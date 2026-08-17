@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo de Westview - Registro de Moradores</title>
+</head>
+<body style="background-color: #1a0000; color: #ffcccc; font-family: 'Courier New', Courier, monospace; padding: 20px;">
+
+    <h1>📺 Censo Oficial de Westview 📺</h1>
+    <p><i>"Tudo está sob controle... Por favor, preencha seus dados para a vizinhança perfeito."</i></p>
+    <hr style="border-color: #ff3333;">
+
+    <form action="#" method="POST">
+        
+        <fieldset style="border-color: #ff3333; margin-bottom: 20px;">
+            <legend><b>1. Identidade na Comédia de Sitcom</b></legend>
+            
+            <p>
+                <label for="nome">Nome do seu Personagem:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Agnes, Herb, Bev..." required>
+            </p>
+
+            <p>
+                <label for="decada">Década de Preferência:</label><br>
+                <select id="decada" name="decada">
+                    <option value="50s">Anos 50 (Preto e Branco / Comercial de Torradeira)</option>
+                    <option value="60s">Anos 60 (Mágica no Show de Talentos)</option>
+                    <option value="70s">Anos 70 (Colorido e Calças Boca de Sino)</option>
+                    <option value="80s">Anos 80 (Cabelos Armados e Roupas Neon)</option>
+                    <option value="2000s">Anos 2000 (Depoimentos Estilo Modern Family)</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="papel">Sua Função na Vizinhança:</label><br>
+                <input type="text" id="papel" name="papel" placeholder="Ex: Vizinho curioso, Chefe do Visão, Carteiro...">
+            </p>
+        </fieldset>
+
+        <fieldset style="border-color: #ff3333; margin-bottom: 20px;">
+            <legend><b>2. Status de Controle do HEX</b></legend>
+
+            <p>Como você se sente sobre a sua vida atual em Westview?</p>
+            <input type="radio" id="feliz" name="status_mental" value="100_feliz">
+            <label for="feliz">Estou extremamente feliz e nunca quero sair daqui!</label><br>
+            
+            <input type="radio" id="confuso" name="status_mental" value="com_duvidas">
+            <label for="confuso">Às vezes vejo objetos mudando de cor, mas acho que é normal.</label><br>
+            
+            <input type="radio" id="socorro" name="status_mental" value="pedindo_socorro">
+            <label for="socorro">Ajuda! Tem um sinal de rádio me chamando!</label>
+        </fieldset>
+
+        <fieldset style="border-color: #ff3333; margin-bottom: 20px;">
+            <legend><b>3. Atividades Comunitárias</b></legend>
+
+            <p>Quais eventos você vai participar nesta semana? (Marque todos que puder):</p>
+            
+            <input type="checkbox" id="talentos" name="eventos[]" value="show_talentos">
+            <label for="talentos">Show de Talentos para as Crianças</label><br>
+            
+            <input type="checkbox" id="comite" name="eventos[]" value="comite_boas_vindas">
+            <label for="comite">Reunião do Comitê de Boas-Vindas com a Dottie</label><br>
+            
+            <input type="checkbox" id="comercial" name="eventos[]" value="gravacao_comercial">
+            <label for="comercial">Participar do comercial dos Sabões Hydra</label>
+        </fieldset>
+
+        <fieldset style="border-color: #ff3333; margin-bottom: 20px;">
+            <legend><b>4. Recado para a Feiticeira Escarlate</b></legend>
+            <p>
+                <label for="mensagem">Escreva uma mensagem de agradecimento pelo roteiro do seu dia:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Obrigado por nos dar essa vida maravilhosa..."></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Botões -->
+        <button type="submit" style="background-color: #ff3333; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+            Enviar para o Roteiro
+        </button>
+        <button type="reset" style="background-color: #555; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+            Reiniciar Memória
+        </button>
+
+    </form>
+
+    <br><hr style="border-color: #ff3333;"><br>
+    <a href="../index.html" style="color: #ff9999;">← Voltar para a página principal</a>
+
+</body>
+</html>
