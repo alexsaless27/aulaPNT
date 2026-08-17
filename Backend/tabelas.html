@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Contatos</title>
 </head>
-<body>
-    <a href="../index.html"></a>
+<body style="background-color: #336688; color: #ffffff; font-family: Arial, sans-serif;">
 
-    <table border="1">
-        <tr>
-<td>Linha 1, celula 1</td>
-<td>Linha 2, celula 2</td>
-<td>Linha 3, celula 3</td>
-        </tr>
-<tr>
-<td>Linha 1, celula 1</td>
-<td>Linha 2, celula 2</td>
-<td>Linha 3, celula 3</td>
-        </tr>
+    <h2>Lista de Contatos</h2>
 
+    <table border="1" cellpadding="8" cellspacing="0" style="border-color: #ffffff; width: 100%; max-width: 600px;">
+        <thead>
+            <tr style="background-color: #224455;">
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Contato com 2 números (usa rowspan="2") -->
+            <tr>
+                <td rowspan="2">Ana Silva</td>
+                <td>Pessoal</td>
+                <td>(81) 99111-2233</td>
+            </tr>
+            <tr>
+                <td>Trabalho</td>
+                <td>(81) 98888-4455</td>
+            </tr>
 
+            <!-- Contato com 1 número -->
+            <tr>
+                <td>Carlos Eduardo</td>
+                <td>Pessoal</td>
+                <td>(11) 97777-6655</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Mariana Costa</td>
+                <td>Pessoal</td>
+                <td>(21) 96666-5544</td>
+            </tr>
+            <tr>
+                <td>Trabalho</td>
+                <td>(21) 95555-4433</td>
+            </tr>
+            <tr>
+                <td>Recado</td>
+                <td>(21) 3333-2211</td>
+            </tr>
+        </tbody>
     </table>
+
+    <br>
+ <a href="../index.html">Voltar para o Index</a>
+    
 </body>
 </html>
